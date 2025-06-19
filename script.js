@@ -56,6 +56,10 @@ $(document).ready(function() {
         var myModal = new bootstrap.Modal(document.getElementById('orderModal'), {});
         myModal.show();
     });
+     $('#viewReceiptBtn').click(function() {
+        var myModal = new bootstrap.Modal(document.getElementById('receiptModal'), {});
+        myModal.show();
+    });
 });
 var xValues2 = ["รายรับทั้งหมด", "รายรับจากเด็ก", "รายรับอาหาร", "จำนวนที่เด็กทำรอบวันนี้", "อื่นๆ"];
 var yValues2 = [55, 49, 44, 24, 15];

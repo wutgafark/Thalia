@@ -250,7 +250,11 @@
         <div id="promotions" class="page">
             <div class="card">
                 <h2>🎉 โปรโมชั่นพิเศษ</h2>
-                
+                <div style="text-align: right; margin-bottom: 10px;">
+            <button class="btn btn-success" id="viewReceiptBtn">
+                🧾 ดูใบเสร็จ
+            </button>
+        </div>
                 <div class="promotion-card">
                     <div class="promotion-discount">-50%</div>
                     <h3 class="promotion-title">🍜 Happy Hour</h3>
@@ -287,6 +291,72 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal ใบเสร็จ -->
+        <div class="modal fade" id="receiptModal" tabindex="-1" aria-labelledby="receiptModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="width: 300px; margin: auto; font-family: monospace;">
+      <div class="modal-body">
+        <div style="text-align: center;">
+          <img src="/img/logo-removebg-preview.png" alt="Logo" style="width: 100px; height: auto;">
+        <h5 style="text-align: center;">THALIA</h5>
+        <p style="text-align: center;">ใบเสร็จรับเงิน</p>
+        <p>เลขที่: IV-000186</p>
+        <p>วันที่: 2025-06-19 เวลา: 13:45</p>
+        <p>พนักงาน: Admin</p>
+        <hr>
+        <table style="width: 100%; font-size: 14px;">
+          <thead>
+            <tr>
+              <th style="text-align: left;">รายการ</th>
+              <th style="text-align: right;">จำนวน</th>
+              <th style="text-align: right;">ราคา</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ผัดไทยกุ้งสด</td>
+              <td style="text-align: right;">2</td>
+              <td style="text-align: right;">360</td>
+            </tr>
+            <tr>
+              <td>พิซซ่าชีสเยอะ</td>
+              <td style="text-align: right;">1</td>
+              <td style="text-align: right;">320</td>
+            </tr>
+            <tr>
+              <td>บริการน้องพลอย</td>
+              <td style="text-align: right;">2ชม.</td>
+              <td style="text-align: right;">600</td>
+            </tr>
+            <tr>
+              <td>บริการน้องซากุระ</td>
+              <td style="text-align: right;">1ชม.</td>
+              <td style="text-align: right;">300</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr>
+        <table style="width: 100%; font-size: 14px;">
+          <tr>
+            <td>รวม</td>
+            <td style="text-align: right;">1580.00</td>
+          </tr>
+          <tr>
+            <td>ส่วนลด</td>
+            <td style="text-align: right;">-500.00</td>
+          </tr>
+          <tr style="font-weight: bold;">
+            <td>ยอดสุทธิ</td>
+            <td style="text-align: right;">1080.00</td>
+          </tr>
+        </table>
+        <hr>
+        <p style="text-align: center;">ขอบคุณที่ใช้บริการ</p>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
